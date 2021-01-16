@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import NavBar from './components/NavBar'
 function App() {
   return (
-    <h1> Portfolio project..</h1>
+    <NavBar />
   );
 }
 
