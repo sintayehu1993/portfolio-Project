@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-lightBlue: #add8e6;
+  --primary-dark: rgba(255,255,255, 0);
+}
+body {
+  font-family: 'Roboto Condesed' 'san-serif';
+}
+/*...Nav bar...*/
+.logo {
+  width: 12rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*...bar link style...*/
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.0575rem;
+  cursor: pointer;
+}
+/*...sets the nav letter to uppercase...*/
+nav ul li {
+  text-transform: uppercase;
+}
+.navbar-nav > li > a {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var( --primary-dark)
+}
+.navbar-Portfolio-Logo {
+  max-width: 12.25rem;
+  padding: 0 !important;
+  height: 4.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active :focus {
+  border-top: 0.1875rem solid var(--primary-lightBlue);
+}
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-lightBlue);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
