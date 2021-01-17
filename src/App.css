@@ -6,8 +6,12 @@
   --primary-dark: rgba(255, 255, 255, 0);
   --primary-hover-blue: #1c5466;
   --primary-hover-brown: #654321;
+  --primary-black: rgba(0, 0, 0, 0.959);
 }
 
+body {
+font-family: "Roboto Condensed", sans-serif !important
+}
 /*...Nav bar...*/
 nav {
   z-index: 2;
@@ -73,7 +77,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Roboto Condesed', 'san-serif';
+  
 }
 
 /* ===>  typed_text <====*/
@@ -99,7 +103,7 @@ nav ul li {
 }
 .Contact-Button:hover {
   text-decoration: none;
-  background-color: var(--primary-hover-brown);
+  background-color: var(--primary-black);
   transition: 0.2s ease-in-out;
 }
 
@@ -114,5 +118,30 @@ nav ul li {
 @media (max-width: 760px) {
   .particles_canvas {
     display: none;
+  }
+}
+
+
+/* ===>  About <====*/
+.about-Me-img-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.profile-img {
+width: 16rem;
+border-radius: 50%;
+padding: 0.3rem ;
+border: 5px solid var(--primary-lightBlue);
+}
+.About-Heading {
+  color: var(--primary-black);
+  text-transform: uppercase;
+}
+@media(max-width: 468px){
+  .profile-img{
+    width: 10rem;
   }
 }
