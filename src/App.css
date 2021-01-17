@@ -2,6 +2,7 @@
 
 :root {
   --primary-white: #fff;
+  --primary-Salmon: #f5937e;
   --primary-lightBlue: #add8e6;
   --primary-dark: rgba(255, 255, 255, 0);
   --primary-hover-blue: #1c5466;
@@ -10,7 +11,7 @@
 }
 
 body {
-font-family: "Roboto Condensed", sans-serif !important
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 /*...Nav bar...*/
 nav {
@@ -45,8 +46,8 @@ nav ul li {
 }
 @media (max-width: 760px) {
   .navbar-Portfolio-Logo {
-   width: 7rem;
-}
+    width: 7rem;
+  }
 }
 
 .navbar-nav > li > a.active,
@@ -77,14 +78,14 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 
 /* ===>  typed_text <====*/
 .typed_text {
   margin-top: 2rem;
   font-size: 2rem;
-  color: var(--primary-white);
+  text-transform: uppercase;
+  color: var(--primary-Salmon);
 }
 @media (max-width: 760px) {
   .typed_text {
@@ -121,27 +122,82 @@ nav ul li {
   }
 }
 
-
 /* ===>  About <====*/
 .about-Me-img-Wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-
 }
 .profile-img {
-width: 16rem;
-border-radius: 50%;
-padding: 0.3rem ;
-border: 5px solid var(--primary-lightBlue);
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 5px solid var(--primary-lightBlue);
 }
 .About-Heading {
   color: var(--primary-black);
   text-transform: uppercase;
 }
-@media(max-width: 468px){
-  .profile-img{
+@media (max-width: 468px) {
+  .profile-img {
     width: 10rem;
   }
 }
+
+/* ===>  Projects <====*/
+
+.Projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2rem;
+  background: var(--primary-Salmon);
+}
+
+.Projects h1 {
+  color: var(--primary-black);
+  text-transform: uppercase;
+}
+.Projects .circle {
+  padding: relative;
+  margin: 00.375rem auto;
+  background: var(--primary-lightBlue);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.Projects .icon {
+  font-size: 1.4rem;
+  color: var(--primary-black);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 22px;
+}
+.circle {
+  margin-top: 25%;
+  margin-bottom: 25%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+.Projects .box {
+  height: 16rem;
+  border-top: 0.215rem solid;
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background:#CD5C5C ;
+}
+
+.Projects .box:hover {
+  background: var(--primary-Salmon);
+  border-bottom: 0.215rem solid var(--primary-white);
+}
+
+.Projects .box:hover .icon {
+color: var(--primary-white);
+}
+
+.Projects .box:hover .circle {
+  background: var(--primary-black);
+  }
