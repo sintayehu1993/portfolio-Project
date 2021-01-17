@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../MatiLogo.png";
+import Logo from "../logo.png";
 // import Logo from "../matiLogo2.png"
 
 // react fontawsome import
@@ -13,7 +13,7 @@ const NavBar = () => {
       <div className="container">
         <a className="navbar-Portfolio-Logo" href="#">
           {" "}
-          <img className="logo" src={Logo} alt="Mati page" />
+          <img className="logo" src={Logo} alt="Mati" />
         </a>
        
         <button
