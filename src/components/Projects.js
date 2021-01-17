@@ -9,10 +9,9 @@ const Projects = () => {
       <h1 className="py-5">Projects</h1>
       <div className="container">
         <div className="col">
-          <div className="row-md-3 row-sm-6">
+          <div className="row-lg-3 row-md-6 row-md-6">
             <div className="box">
               <div className="circle">
-               
                 <FontAwesomeIcon className="icon" icon={faLaptop} size="2x" />
               </div>
               <h3>CapStone</h3>
@@ -22,11 +21,10 @@ const Projects = () => {
             </div>
           </div>
           {/* */}
-          <div className="row-md-3 row-md-3">
+          <div className="row-lg-3 row-md-6 row-md-6">
             <div className="box">
               <div className="circle">
-               
-                <FontAwesomeIcon className="icon"  icon={faFileCode} size="2x" />
+                <FontAwesomeIcon className="icon" icon={faFileCode} size="2x" />
               </div>
               <h3>StackThone</h3>
               <p>
@@ -36,11 +34,10 @@ const Projects = () => {
             </div>
           </div>
           {/* */}
-          <div className="row-md-3 row-md-3">
+          <div className="row-lg-3 row-md-6 row-md-6">
             <div className="box">
               <div className="circle">
-              
-                <FontAwesomeIcon className="icon"  icon={faMedium} size="2x" />
+                <FontAwesomeIcon className="icon" icon={faMedium} size="2x" />
               </div>
               <h3>Medium</h3>
               <p>
