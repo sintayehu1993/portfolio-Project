@@ -203,8 +203,8 @@ nav ul li {
 }
 
 /*...experiance & education timeline...*/
-.experience-education{
-  padding:0.7rem;
+.experience-education {
+  padding: 0.7rem;
 }
 .experience-education {
   position: relative;
@@ -263,7 +263,7 @@ nav ul li {
 }
 /* media*/
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .experience-education {
     padding-left: 0;
   }
@@ -278,6 +278,98 @@ nav ul li {
   .timeline-block-left {
     float: none;
     direction: ltr;
-    width:100%;
+    width: 100%;
+  }
+}
+
+/* ==> contact <==*/
+.contacts {
+  background: var(--primary-dark-gray);
+  padding: 3rem 0;
+}
+.contacts h1 {
+  color: var(--primary-Salmon);
+  padding: 1.3rem;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-black);
+  font-size: 1.5rem;
+}
+
+/* ==> contact InPUT <==*/
+.contacts input,
+.contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-lightBlue);
+  border-radius: 0;
+  color: var(--primary-Salmon);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+  background: transparent;
+  color: lavenderblush;
+  border-bottom: 0.125rem solid var(--primary-lightBlue);
+}
+.contacts textarea {
+  height: 12.2rem !important;
+  border-bottom: 0.125rem solid var(--primary-lightBlue);
+}
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+  color: var(--primary-white);
+}
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-Salmon);
+  display: inline-block;
+}
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+input.form-control {
+  margin: -0.3rem 0;
+}
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+.success-message {
+  color: green;
+  text-align: left;
+}
+.error-message {
+  color: var(--primary-black);
+  background: red;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+  .contacts .container {
+    padding: 1rem;
+  }
+  .contacts p {
+    padding: 0 0.5rem;
   }
 }
